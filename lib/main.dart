@@ -1,20 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:fardina383/homepage.dart';
+import 'login.dart';
 
-void main(){
-  runApp(const MyApp());
+void main() {
+  runApp(MyApp());
 }
 
-class MyApp extends StatelessWidget{
-  const MyApp({super.key});
+class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-  return MaterialApp( 
-    theme: ThemeData.dark(),
-    debugShowCheckedModeBanner: false,
-    home:Homepage());//full app a cng korle aikhane korbo
-
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: LoginPage(),
+    );
   }
-
 }
